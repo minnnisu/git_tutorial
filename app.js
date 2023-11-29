@@ -10,8 +10,7 @@ app.use(express.static("public"));
 
 // 루트 경로에 대한 라우터 설정
 app.get("/", (req, res) => {
-  //   res.render("index", { title: "Express with EJS" });
-  res.send("Hello Git");
+  res.render("index", { title: "Express with EJS" });
 });
 
 app.get("/login", (req, res) => {
