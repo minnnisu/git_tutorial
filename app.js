@@ -19,6 +19,11 @@ app.get("/login", (req, res) => {
   res.send("로그인 페이지");
 });
 
+app.get("/logout", (req, res) => {
+  //   res.render("index", { title: "Express with EJS" });
+  res.send("로그아웃 페이지");
+});
+
 // 서버 시작
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
